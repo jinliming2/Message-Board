@@ -8,20 +8,16 @@ const initialState = window.__JLM__INITIAL_STATE__ || {
     messages: []
 };
 
-export default function rootReducer(state = initialState, action) {
+export default function RootReducer(state = initialState, action) {
     switch(action.type) {
         case LOAD_ALL_MESSAGES:
             return loadAllMessageReducer(state, action);
-            break;
         case LOAD_MESSAGES:
             return loadMessageReducer(state, action);
-            break;
         case SEND_MESSAGE:
             return state;
-            break;
         case CATCH_EXCEPTION:
             return state;
-            break;
         default:
             return state;
     }

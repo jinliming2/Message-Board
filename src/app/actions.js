@@ -15,6 +15,7 @@ export const CATCH_EXCEPTION = 'CATCH_EXCEPTION';
  * @return {function(*)}
  */
 export function fetchMessages(db) {
+    /* istanbul ignore next */
     return dispatch => db.allDocs({
         include_docs: true
     })
@@ -22,6 +23,7 @@ export function fetchMessages(db) {
         .catch(err => dispatch(catchException(err)));
 }
 
+/* istanbul ignore next */
 /**
  * 留言
  * @param db

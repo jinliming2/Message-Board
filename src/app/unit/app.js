@@ -15,6 +15,7 @@ const PouchDB = require('pouchdb');
 const db = new PouchDB(DB_NAME);
 
 class App extends Component {
+    /* istanbul ignore next */
     constructor(props) {
         super(props);
     }
@@ -30,16 +31,15 @@ class App extends Component {
 
         dispatch(fetchMessages(db));
 
+        /* istanbul ignore next */
         this.sync = this.sync || db.sync(`http://${window.location.host}/${DB_NAME}`, {
             live: true,
             retry: true
         })
-            .on('change', info => console.log('sync change', info))
-            .on('active', () => console.log('sync active'))
-            .on('complete', info => console.log('sync complete', info))
-            .on('paused', err => console.warn('sync paused', err))
             .on('denied', err => dispatch(catchException(err)))
             .on('error', err => dispatch(catchException(err)));
+
+        /* istanbul ignore next */
         this.changes = this.changes || db.changes({
             since: 'now',
             live: true,

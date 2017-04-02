@@ -8,6 +8,7 @@ import {connect} from 'react-redux';
 import LeaveMessage from './leaveMessage';
 
 class MessageList extends Component {
+    /* istanbul ignore next */
     constructor(props) {
         super(props);
     }

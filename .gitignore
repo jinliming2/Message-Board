@@ -1,3 +1,6 @@
 .idea/
+.nyc_output/
 node_modules/
 build/
+coverage/
+lm_messages/
