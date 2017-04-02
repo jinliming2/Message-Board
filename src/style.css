@@ -1,0 +1,119 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line div {
+    margin: 0 8px;
+}
+
+input {
+    height: 38px;
+    width: 200px;
+    line-height: 38px;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px;
+    outline: none;
+    padding: 0 10px;
+}
+
+input:focus {
+    outline: 1px solid deepskyblue;
+}
+
+button {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    text-decoration: none;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: .9;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    opacity: 1;
+}
+
+.discuss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.discuss-head {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform .5s;
+}
+
+.discuss:hover .discuss-head {
+    transform: rotate(360deg);
+}
+
+.discuss-body {
+    flex-grow: 1;
+    margin-left: 32px;
+}
+
+.discuss-name {
+    font-weight: bold;
+}
+
+.discuss-time {
+    font-size: .8rem;
+    margin-left: 8px;
+}
+
+p {
+    text-indent: 2em;
+}
+
+.discuss-footer {
+    text-align: right;
+    color: #999;
+    font-size: .9rem;
+}
+
+.discuss-footer .line {
+    justify-content: flex-end;
+}
+
+.discuss-footer input {
+    height: initial;
+    width: initial;
+    line-height: initial;
+    border: none;
+    border-bottom: 1px solid #E6E6E6;
+    outline: none;
+    padding: 0;
+}
+
+.discuss-footer input:focus {
+    border-bottom: 1px solid deepskyblue;
+}
+
+.discuss-footer button {
+    height: initial;
+    line-height: initial;
+    padding: 2px 8px;
+}
+

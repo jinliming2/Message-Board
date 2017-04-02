@@ -1,0 +1,48 @@
+{
+  "name": "message-board",
+  "version": "1.0.0",
+  "description": "A message board with React and Redux.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp product && node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinliming2/Message-Board.git"
+  },
+  "keywords": [
+    "MessageBoard",
+    "React",
+    "Redux"
+  ],
+  "author": "Liming Jin, jinliming2@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jinliming2/Message-Board/issues"
+  },
+  "homepage": "https://github.com/jinliming2/Message-Board#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-register": "^6.24.0",
+    "babel-runtime": "^6.23.0",
+    "express": "^4.15.2",
+    "md5": "^2.2.1",
+    "pouchdb": "^6.1.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "gulp": "^3.9.1",
+    "webpack": "^2.3.2",
+    "webpack-stream": "^3.2.0"
+  }
+}
